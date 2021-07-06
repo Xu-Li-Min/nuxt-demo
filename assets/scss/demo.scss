@@ -1,0 +1,11 @@
+@import '_variables.scss';
+
+body{
+  background-color: $primary;
+  font-family: 'Noto Sans TC', sans-serif;
+  // background: url(~assets/images/logo.jpg);
+}
+
+h2{
+  @extend %clearfix;
+}
