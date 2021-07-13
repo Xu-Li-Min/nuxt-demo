@@ -1,7 +1,7 @@
 import router from "./router.js";
 
 export default {
-  mode:'universal',
+  mode: "universal",
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: "nuxt-demo",
@@ -14,14 +14,15 @@ export default {
       { hid: "description", name: "description", content: "" },
       { name: "format-detection", content: "telephone=no" }
     ],
-    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
-    script: [
-      { src: "/jquery.min.js" },
+    link: [
+      { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
       {
-        src:
-          "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.js"
+        rel: "stylesheet",
+        href:
+          "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
       }
     ]
+    // script: []
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -29,8 +30,8 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
-    { src: '~/plugins/datepicker.js', mode: 'client' },
-    { src: '~/plugins/gsap.js', mode: 'client' },
+    { src: "~/plugins/datepicker.js", mode: "client" },
+    { src: "~/plugins/gsap.js", mode: "client" }
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -40,7 +41,7 @@ export default {
   buildModules: [],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: ['@nuxtjs/axios'],
+  modules: ["@nuxtjs/axios"],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {

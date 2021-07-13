@@ -39,7 +39,7 @@
 </style>
 
 <script>
-import Logo from '~/components/NuxtLogo.vue';
+import Logo from '~/components/Logo.vue';
 // import { sleep, deepCopy } from '@/assets/js/tool.js';
 import * as tool from '~/assets/js/tool.js';
 import test from '~/assets/js/test.js';
