@@ -1,4 +1,4 @@
-import router from "./router.js";
+// import router from "./router.js";
 
 export default {
   mode: "universal",
@@ -28,6 +28,16 @@ export default {
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: ["@/assets/scss/main.scss"],
 
+  loading: {
+    color: "#40659b",
+    height: "5px",
+    duration: 5000
+  },
+  transition: {
+    name: "out-in",
+    mode: "out-in"
+  },
+
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
     { src: "~/plugins/datepicker.js", mode: "client" },
@@ -55,11 +65,11 @@ export default {
         }
       }
     }
-  },
-  router: {
-    mode: "history", //這段可以不用寫
-    extendRoutes(routes, resolve) {
-      return router;
-    }
   }
+  // router: {
+  //   mode: "history", //這段可以不用寫
+  //   extendRoutes(routes, resolve) {
+  //     return router;
+  //   }
+  // }
 };

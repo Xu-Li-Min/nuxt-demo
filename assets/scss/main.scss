@@ -1,2 +1,9 @@
 @import '_variables';
 @import '~bulma';
+
+.out-in-enter-active, .out-in-leave-active {
+  transition: opacity .5s;
+}
+.out-in-enter, .out-in-leave-to /* .out-in-leave-active below version 2.1.8 */ {
+  opacity: 0;
+}
